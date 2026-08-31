@@ -1,45 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+body{
+    background-color: lightpink;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Musicas-da-mimi</title>
-</head>
+/* TÍTULO PRINCIPAL - COM TODOS OS ESTILOS QUE VOCÊ QUER! */
+h1{
+    color: #C71585;                   /* Rosa escuro */
+    font-size: 75px;                  /* Tamanho grande */
+    text-align: center;              /* ✅ CENTRALIZADO */
+    font-family: Arial, sans-serif;   /* Fonte bonita */
+    
+    /* ✅ SOMBRA NO TEXTO (efeito 3D) */
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    
+    /* ✅ FUNDO ESPECIAL */
+    background-color: rgba(255, 255, 255, 0.8); /* Branco transparente */
+    
+    /* ✅ BORDA DECORATIVA */
+    border: 5px solid #C71585;        /* Borda rosa grossa */
+    border-radius: 60px;              /* Cantos super arredondados */
+    
+    /* Espaçamento interno e externo */
+    padding: 25px 30px;
+    max-width: 700px;                 /* Largura máxima */
+    margin: 30px auto;                /* Centralizado na tela */
+    
+    /* Extra: coloca uma sombra no fundo também! */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
-<body>
-    <h1>🎵 Musicas-da-mimi 🎸</h1>
+/* TÍTULOS DOS CANTORES */
+h2 {
+    background-color: #C71585;
+    color: white;
+    font-size: 45px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px 0;
+}
 
-    <!-- LUAN SANTANA -->
-    <h2>🎸 luan santana</h2>
-    <div class="video-container">
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/tPmS-CfIeNk" title="Luan Santana - TE ESPERANDO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/iyKRz-6U4Xw" title="Luan Santana - AMAR NÃO É PECADO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/ku6T_Fb87xE" title="Luan Santana - EU, VOCÊ, O MAR E ELA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/ZIiQ1jMqhVM" title="Luan Santana - MORENA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/ysZP--fcgnc" title="Luan Santana - Escreve Aí" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <!-- HENRIQUE E JULIANO -->
-    <h2>🎤 henrique e juliano</h2>
-    <div class="video-container">
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/9Vt4XguN2-A" title="Henrique e Juliano - ÚLTIMA SAUDADE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/_wiuW3z91vo" title="Henrique e Juliano - Amor dos outros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/X8jD3F9PI7Q" title="Henrique e Juliano - NA HORA DA RAIVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/2Q6eFRuYa2w" title="Henrique e Juliano - Cuida Bem Dela" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <!-- MARÍLIA MENDONÇA -->
-    <h2>🌹 marília mendonça</h2>
-    <div class="video-container">
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/Dt13Wv6Opeo" title="Marília Mendonça - Foi Por Conveniência" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/2WsIm6pNlI4" title="Marília Mendonça - Estranho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/eCyMh-mZ1B0" title="Marília Mendonça - Infiel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/IJmxyfbRg0A" title="Matheus & Kauan - Vou Ter Que Superar ft. Marília Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/2Cr8zkP-d0I" title="Murilo Huff - DOIS ENGANADOS ft. Marília Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/JPWjJlNtE_w" title="Marília Mendonça - Como Faz Com Ela" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-</body>
-</html>
+/* VÍDEOS */
+iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
