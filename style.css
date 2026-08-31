@@ -1,45 +1,70 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+body {
+    background-color: #ffe4ec;
+    /* DESENHANDO LAÇOS COM CÍRCULOS */
+    background-image: 
+        /* Laços grandes rosas */
+        radial-gradient(circle at 20% 25%, #ff69b4 15px, transparent 15px),
+        radial-gradient(circle at 80% 75%, #ff69b4 15px, transparent 15px),
+        radial-gradient(circle at 50% 50%, #ff1493 20px, transparent 20px),
+        /* Laços médios */
+        radial-gradient(circle at 10% 80%, #ff69b4 12px, transparent 12px),
+        radial-gradient(circle at 90% 20%, #ff69b4 12px, transparent 12px),
+        /* Laços pequenos */
+        radial-gradient(circle at 30% 60%, #ffb6c1 8px, transparent 8px),
+        radial-gradient(circle at 70% 40%, #ffb6c1 8px, transparent 8px),
+        /* Brilhos brancos */
+        radial-gradient(circle at 40% 30%, #ffffff 3px, transparent 3px),
+        radial-gradient(circle at 60% 70%, #ffffff 3px, transparent 3px);
+    background-size: 300px 300px;
+    background-repeat: repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Musicas-da-mimi</title>
-</head>
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #C71585;
+    font-size: 75px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 5px solid #C71585;
+    border-radius: 60px;
+    padding: 25px 30px;
+    max-width: 700px;
+    margin: 30px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
-<body>
-    <h1>🎀 Musicas-da-mimi 🎀</h1>
+/* TÍTULOS DOS CANTORES */
+h2 {
+    background-color: #C71585;
+    color: white;
+    font-size: 45px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px 0;
+}
 
-    <!-- LUAN SANTANA -->
-    <h2>🎸 luan santana</h2>
-    <div class="video-container">
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/tPmS-CfIeNk" title="Luan Santana - TE ESPERANDO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/iyKRz-6U4Xw" title="Luan Santana - AMAR NÃO É PECADO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/ku6T_Fb87xE" title="Luan Santana - EU, VOCÊ, O MAR E ELA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/ZIiQ1jMqhVM" title="Luan Santana - MORENA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/ysZP--fcgnc" title="Luan Santana - Escreve Aí" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+/* CONTAINER DOS VÍDEOS - CENTRALIZADO! */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    /* ✅ CENTRALIZA OS VÍDEOS */
+    align-items: center;        /* ✅ ALINHA VERTICALMENTE */
+    gap: 20px;                  /* Espaço entre os vídeos */
+    margin: 20px auto;          /* ✅ CENTRALIZA O CONTAINER */
+    max-width: 1200px;          /* Largura máxima pra não ficar muito largo */
+}
 
-    <!-- HENRIQUE E JULIANO -->
-    <h2>🎤 henrique e juliano</h2>
-    <div class="video-container">
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/9Vt4XguN2-A" title="Henrique e Juliano - ÚLTIMA SAUDADE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/_wiuW3z91vo" title="Henrique e Juliano - Amor dos outros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/X8jD3F9PI7Q" title="Henrique e Juliano - NA HORA DA RAIVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/2Q6eFRuYa2w" title="Henrique e Juliano - Cuida Bem Dela" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <!-- MARÍLIA MENDONÇA -->
-    <h2>🌹 marília mendonça</h2>
-    <div class="video-container">
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/Dt13Wv6Opeo" title="Marília Mendonça - Foi Por Conveniência" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/2WsIm6pNlI4" title="Marília Mendonça - Estranho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/eCyMh-mZ1B0" title="Marília Mendonça - Infiel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/IJmxyfbRg0A" title="Matheus & Kauan - Vou Ter Que Superar ft. Marília Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/2Cr8zkP-d0I" title="Murilo Huff - DOIS ENGANADOS ft. Marília Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/JPWjJlNtE_w" title="Marília Mendonça - Como Faz Com Ela" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-</body>
-</html>
+/* CADA VÍDEO */
+.video-container iframe {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    flex-shrink: 0;
+}
