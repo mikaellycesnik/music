@@ -1,4 +1,4 @@
-/* ========== ESTRELAS DE FAVORITAR ========== */
+/* ========== ESTRELA DE FAVORITAR ========== */
 .favorite-btn {
     padding: 8px 15px;
     border: none;
@@ -16,42 +16,13 @@
     background: rgba(255, 215, 0, 0.2);
 }
 
-/* Estrela favoritada (cheia) */
 .favorite-btn.active {
     color: #FFD700;
     text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-    animation: pulse-star 0.5s ease;
 }
 
-/* Animação da estrela */
 @keyframes pulse-star {
     0% { transform: scale(1); }
     50% { transform: scale(1.5); }
     100% { transform: scale(1); }
-}
-
-/* Mensagem quando não tem favoritos */
-.empty-message {
-    text-align: center;
-    font-size: 24px;
-    color: #C71585;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 30px;
-    grid-column: 1 / -1;
-    font-weight: 600;
-}
-
-/* Seção Favoritos destaque */
-#favoritos h2 {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    color: #333;
-    border-color: #FFD700;
-}
-
-#favoritos h2::before {
-    content: "🌟 ";
-}
-#favoritos h2::after {
-    content: " 🌟";
 }
