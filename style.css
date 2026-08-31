@@ -1,70 +1,114 @@
-body {
-    background-color: #ffe4ec;
-    /* DESENHANDO LAÇOS COM CÍRCULOS */
-    background-image: 
-        /* Laços grandes rosas */
-        radial-gradient(circle at 20% 25%, #ff69b4 15px, transparent 15px),
-        radial-gradient(circle at 80% 75%, #ff69b4 15px, transparent 15px),
-        radial-gradient(circle at 50% 50%, #ff1493 20px, transparent 20px),
-        /* Laços médios */
-        radial-gradient(circle at 10% 80%, #ff69b4 12px, transparent 12px),
-        radial-gradient(circle at 90% 20%, #ff69b4 12px, transparent 12px),
-        /* Laços pequenos */
-        radial-gradient(circle at 30% 60%, #ffb6c1 8px, transparent 8px),
-        radial-gradient(circle at 70% 40%, #ffb6c1 8px, transparent 8px),
-        /* Brilhos brancos */
-        radial-gradient(circle at 40% 30%, #ffffff 3px, transparent 3px),
-        radial-gradient(circle at 60% 70%, #ffffff 3px, transparent 3px);
-    background-size: 300px 300px;
-    background-repeat: repeat;
-    min-height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe4ec, #ffb6c1, #ffe4ec);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
     padding: 20px;
 }
 
-/* TÍTULO PRINCIPAL */
+/* TÍTULO PRINCIPAL - Estilo perfil */
 h1 {
     color: #C71585;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
-    font-family: Arial, sans-serif;
-    text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 5px solid #C71585;
-    border-radius: 60px;
-    padding: 25px 30px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(199, 21, 133, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid #ff69b4;
+    border-radius: 50px;
+    padding: 20px 30px;
     max-width: 700px;
-    margin: 30px auto;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    box-shadow: 0 10px 40px rgba(199, 21, 133, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
 }
 
-/* TÍTULOS DOS CANTORES */
+h1:hover {
+    transform: scale(1.03);
+}
+
+/* TÍTULOS DOS CANTORES - Estilo stories do Instagram */
 h2 {
-    background-color: #C71585;
+    background: linear-gradient(135deg, #C71585, #ff69b4);
     color: white;
-    font-size: 45px;
-    padding: 20px;
-    border-radius: 15px;
+    font-size: 40px;
+    padding: 15px 25px;
+    border-radius: 50px;
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0 25px 0;
+    box-shadow: 0 6px 20px rgba(199, 21, 133, 0.3);
+    display: inline-block;
+    width: auto;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
 }
 
-/* CONTAINER DOS VÍDEOS - CENTRALIZADO! */
+h2:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 10px 30px rgba(199, 21, 133, 0.4);
+}
+
+/* CONTAINER DOS VÍDEOS - Grid estilo Pinterest/Instagram */
 .video-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;    /* ✅ CENTRALIZA OS VÍDEOS */
-    align-items: center;        /* ✅ ALINHA VERTICALMENTE */
-    gap: 20px;                  /* Espaço entre os vídeos */
-    margin: 20px auto;          /* ✅ CENTRALIZA O CONTAINER */
-    max-width: 1200px;          /* Largura máxima pra não ficar muito largo */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-/* CADA VÍDEO */
+/* CADA VÍDEO - Estilo card/post */
 .video-container iframe {
-    width: 300px;
+    width: 100%;
     height: 200px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    flex-shrink: 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 3px solid white;
+}
+
+/* EFEITO AO PASSAR O MOUSE - Igual Instagram! */
+.video-container iframe:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 15px 45px rgba(199, 21, 133, 0.25);
+    border-color: #ff69b4;
+}
+
+/* TÍTULOS DOS CANTORES COM ÍCONES */
+h2::before {
+    content: "✨ ";
+}
+
+h2::after {
+    content: " ✨";
+}
+
+/* DECORAÇÃO DE FUNDO - Bolinhas modernas */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(255, 105, 180, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(255, 20, 147, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
 }
