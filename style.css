@@ -2,17 +2,50 @@ body{
     background-color: lightpink;
 }
 
+/* TÍTULO PRINCIPAL - COM TODOS OS ESTILOS QUE VOCÊ QUER! */
 h1{
-    color: palevioletred;
-    font-size: 100px;
+    color: #C71585;                   /* Rosa escuro */
+    font-size: 75px;                  /* Tamanho grande */
+    text-align: center;              /* ✅ CENTRALIZADO */
+    font-family: Arial, sans-serif;   /* Fonte bonita */
+    
+    /* ✅ SOMBRA NO TEXTO (efeito 3D) */
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    
+    /* ✅ FUNDO ESPECIAL */
+    background-color: rgba(255, 255, 255, 0.8); /* Branco transparente */
+    
+    /* ✅ BORDA DECORATIVA */
+    border: 5px solid #C71585;        /* Borda rosa grossa */
+    border-radius: 60px;              /* Cantos super arredondados */
+    
+    /* Espaçamento interno e externo */
+    padding: 25px 30px;
+    max-width: 700px;                 /* Largura máxima */
+    margin: 30px auto;                /* Centralizado na tela */
+    
+    /* Extra: coloca uma sombra no fundo também! */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* TÍTULOS DOS CANTORES */
 h2 {
-    background-color: #C71585;  /* Rosa escuro lindo! */
+    background-color: #C71585;
     color: white;
     font-size: 45px;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     margin: 30px 0;
+}
+
+/* VÍDEOS */
+iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
