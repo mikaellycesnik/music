@@ -452,4 +452,32 @@ h2:hover {
         font-size: 11px;
         padding: 6px 14px;
     }
+}body {
+    background-color: #ffe4ec;
+    /* FUNDO DE BOLINHAS */
+    background-image: 
+        /* Bolinhas grandes rosas */
+        radial-gradient(circle at 15% 20%, #ff69b4 18px, transparent 18px),
+        radial-gradient(circle at 85% 80%, #ff69b4 18px, transparent 18px),
+        radial-gradient(circle at 50% 50%, #ff1493 22px, transparent 22px),
+        /* Bolinhas médias */
+        radial-gradient(circle at 10% 70%, #ff69b4 14px, transparent 14px),
+        radial-gradient(circle at 90% 30%, #ff69b4 14px, transparent 14px),
+        radial-gradient(circle at 30% 85%, #ffb6c1 12px, transparent 12px),
+        radial-gradient(circle at 70% 15%, #ffb6c1 12px, transparent 12px),
+        /* Bolinhas pequenas */
+        radial-gradient(circle at 25% 45%, #ffb6c1 8px, transparent 8px),
+        radial-gradient(circle at 75% 55%, #ffb6c1 8px, transparent 8px),
+        radial-gradient(circle at 45% 25%, #ff69b4 6px, transparent 6px),
+        radial-gradient(circle at 55% 75%, #ff69b4 6px, transparent 6px),
+        /* Brilhos */
+        radial-gradient(circle at 20% 35%, #ffffff 4px, transparent 4px),
+        radial-gradient(circle at 80% 65%, #ffffff 4px, transparent 4px),
+        radial-gradient(circle at 40% 60%, #ffffff 3px, transparent 3px),
+        radial-gradient(circle at 60% 40%, #ffffff 3px, transparent 3px);
+    background-size: 350px 350px;
+    background-repeat: repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 80px 20px 80px 20px;
 }
