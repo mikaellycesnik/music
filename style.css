@@ -2,29 +2,19 @@ body{
     background-color: lightpink;
 }
 
-/* TÍTULO PRINCIPAL - COM TODOS OS ESTILOS QUE VOCÊ QUER! */
+/* TÍTULO PRINCIPAL */
 h1{
-    color: #C71585;                   /* Rosa escuro */
-    font-size: 75px;                  /* Tamanho grande */
-    text-align: center;              /* ✅ CENTRALIZADO */
-    font-family: Arial, sans-serif;   /* Fonte bonita */
-    
-    /* ✅ SOMBRA NO TEXTO (efeito 3D) */
+    color: #C71585;
+    font-size: 75px;
+    text-align: center;
+    font-family: Arial, sans-serif;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
-    
-    /* ✅ FUNDO ESPECIAL */
-    background-color: rgba(255, 255, 255, 0.8); /* Branco transparente */
-    
-    /* ✅ BORDA DECORATIVA */
-    border: 5px solid #C71585;        /* Borda rosa grossa */
-    border-radius: 60px;              /* Cantos super arredondados */
-    
-    /* Espaçamento interno e externo */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid #C71585;
+    border-radius: 60px;
     padding: 25px 30px;
-    max-width: 700px;                 /* Largura máxima */
-    margin: 30px auto;                /* Centralizado na tela */
-    
-    /* Extra: coloca uma sombra no fundo também! */
+    max-width: 700px;
+    margin: 30px auto;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
@@ -39,13 +29,21 @@ h2 {
     margin: 30px 0;
 }
 
-/* VÍDEOS */
-iframe {
-    width: 80%;
-    max-width: 800px;
-    height: 450px;
-    display: block;
-    margin: 30px auto;
-    border-radius: 20px;
+/* 🔥 NOVIDADE: VÍDEOS ORGANIZADOS EM GRADE! */
+/* Primeiro: um "container" que vai segurar todos os vídeos de cada cantor */
+.video-container {
+    display: flex;              /* Ativa o modo "lado a lado" */
+    flex-wrap: wrap;            /* Se não couber, pula pra linha de baixo */
+    justify-content: center;    /* Centraliza tudo */
+    gap: 20px;                  /* Espaço entre os vídeos */
+    margin: 20px 0;            /* Espaço em cima e embaixo */
+}
+
+/* Depois: cada vídeo individual */
+.video-container iframe {
+    width: 300px;              /* Largura menor pra caber lado a lado */
+    height: 200px;             /* Altura proporcional */
+    border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    flex-shrink: 0;            /* Não deixa os vídeos encolherem demais */
 }
