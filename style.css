@@ -1,114 +1,200 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-body {
-    background: linear-gradient(135deg, #ffe4ec, #ffb6c1, #ffe4ec);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-    padding: 20px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Musicas-da-mimi</title>
+</head>
 
-/* TÍTULO PRINCIPAL - Estilo perfil */
-h1 {
-    color: #C71585;
-    font-size: 70px;
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 900;
-    text-shadow: 0 0 20px rgba(199, 21, 133, 0.3);
-    background: rgba(255, 255, 255, 0.9);
-    border: 3px solid #ff69b4;
-    border-radius: 50px;
-    padding: 20px 30px;
-    max-width: 700px;
-    margin: 20px auto;
-    box-shadow: 0 10px 40px rgba(199, 21, 133, 0.2);
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease;
-}
+<body>
 
-h1:hover {
-    transform: scale(1.03);
-}
+    <!-- ========== MENU SUPERIOR (igual Instagram) ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎀</span>
+                <span class="logo-text">MusicMimi</span>
+            </div>
+            <div class="nav-links">
+                <a href="#">🏠 Início</a>
+                <a href="#">🔍 Explorar</a>
+                <a href="#">❤️ Favoritos</a>
+                <a href="#">👤 Perfil</a>
+            </div>
+        </div>
+    </nav>
 
-/* TÍTULOS DOS CANTORES - Estilo stories do Instagram */
-h2 {
-    background: linear-gradient(135deg, #C71585, #ff69b4);
-    color: white;
-    font-size: 40px;
-    padding: 15px 25px;
-    border-radius: 50px;
-    text-align: center;
-    margin: 40px 0 25px 0;
-    box-shadow: 0 6px 20px rgba(199, 21, 133, 0.3);
-    display: inline-block;
-    width: auto;
-    min-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    transition: all 0.3s ease;
-}
+    <!-- ========== PERFIL DO USUÁRIO ========== -->
+    <div class="profile">
+        <div class="profile-avatar">
+            <div class="avatar-circle">🎵</div>
+        </div>
+        <div class="profile-info">
+            <h1 class="profile-name">🎀 Musicas-da-mimi 🎀</h1>
+            <p class="profile-bio">🎶 Apaixonada por música sertaneja! | Marília, Luan e Henrique & Juliano 🌹</p>
+            <div class="profile-stats">
+                <span>🎵 15 músicas</span>
+                <span>❤️ 2.3K curtidas</span>
+                <span>👥 450 seguidores</span>
+            </div>
+        </div>
+    </div>
 
-h2:hover {
-    transform: scale(1.05) translateY(-3px);
-    box-shadow: 0 10px 30px rgba(199, 21, 133, 0.4);
-}
+    <!-- ========== POSTS DOS CANTORES ========== -->
 
-/* CONTAINER DOS VÍDEOS - Grid estilo Pinterest/Instagram */
-.video-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 10px;
-}
+    <!-- LUAN SANTANA -->
+    <div class="artist-section">
+        <h2>🎸 Luan Santana</h2>
+        <div class="video-container">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/tPmS-CfIeNk" title="Luan Santana - TE ESPERANDO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 124</button>
+                    <button class="comment-btn">💬 45</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/iyKRz-6U4Xw" title="Luan Santana - AMAR NÃO É PECADO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 98</button>
+                    <button class="comment-btn">💬 32</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/ku6T_Fb87xE" title="Luan Santana - EU, VOCÊ, O MAR E ELA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 87</button>
+                    <button class="comment-btn">💬 28</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/ZIiQ1jMqhVM" title="Luan Santana - MORENA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 156</button>
+                    <button class="comment-btn">💬 67</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/ysZP--fcgnc" title="Luan Santana - Escreve Aí" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 203</button>
+                    <button class="comment-btn">💬 89</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-/* CADA VÍDEO - Estilo card/post */
-.video-container iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 3px solid white;
-}
+    <!-- HENRIQUE E JULIANO -->
+    <div class="artist-section">
+        <h2>🎤 Henrique e Juliano</h2>
+        <div class="video-container">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/9Vt4XguN2-A" title="Henrique e Juliano - ÚLTIMA SAUDADE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 178</button>
+                    <button class="comment-btn">💬 54</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/_wiuW3z91vo" title="Henrique e Juliano - Amor dos outros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 145</button>
+                    <button class="comment-btn">💬 43</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/X8jD3F9PI7Q" title="Henrique e Juliano - NA HORA DA RAIVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 234</button>
+                    <button class="comment-btn">💬 76</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/2Q6eFRuYa2w" title="Henrique e Juliano - Cuida Bem Dela" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 312</button>
+                    <button class="comment-btn">💬 98</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-/* EFEITO AO PASSAR O MOUSE - Igual Instagram! */
-.video-container iframe:hover {
-    transform: scale(1.05) translateY(-8px);
-    box-shadow: 0 15px 45px rgba(199, 21, 133, 0.25);
-    border-color: #ff69b4;
-}
+    <!-- MARÍLIA MENDONÇA -->
+    <div class="artist-section">
+        <h2>🌹 Marília Mendonça</h2>
+        <div class="video-container">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/Dt13Wv6Opeo" title="Marília Mendonça - Foi Por Conveniência" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 567</button>
+                    <button class="comment-btn">💬 234</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/2WsIm6pNlI4" title="Marília Mendonça - Estranho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 423</button>
+                    <button class="comment-btn">💬 189</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/eCyMh-mZ1B0" title="Marília Mendonça - Infiel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 892</button>
+                    <button class="comment-btn">💬 345</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/IJmxyfbRg0A" title="Matheus & Kauan - Vou Ter Que Superar ft. Marília Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 678</button>
+                    <button class="comment-btn">💬 267</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/2Cr8zkP-d0I" title="Murilo Huff - DOIS ENGANADOS ft. Marília Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 534</button>
+                    <button class="comment-btn">💬 198</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/JPWjJlNtE_w" title="Marília Mendonça - Como Faz Com Ela" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-actions">
+                    <button class="like-btn">❤️ 745</button>
+                    <button class="comment-btn">💬 289</button>
+                    <button class="share-btn">📤</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-/* TÍTULOS DOS CANTORES COM ÍCONES */
-h2::before {
-    content: "✨ ";
-}
+    <!-- ========== MENU INFERIOR (igual Instagram) ========== -->
+    <div class="bottom-menu">
+        <div class="bottom-menu-items">
+            <a href="#">🏠</a>
+            <a href="#">🔍</a>
+            <a href="#">➕</a>
+            <a href="#">❤️</a>
+            <a href="#">👤</a>
+        </div>
+    </div>
 
-h2::after {
-    content: " ✨";
-}
-
-/* DECORAÇÃO DE FUNDO - Bolinhas modernas */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        radial-gradient(circle at 10% 20%, rgba(255, 105, 180, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(255, 20, 147, 0.1) 0%, transparent 50%);
-    pointer-events: none;
-    z-index: -1;
-}
+</body>
+</html>mm
