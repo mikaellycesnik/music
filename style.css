@@ -2,8 +2,18 @@ body{
     background-color: lightpink;
 }
 
-
 h1{
     color: palevioletred;
     font-size: 100px;
+}
+
+/* ESTILO NOVO PARA OS TÍTULOS DOS CANTORES */
+h2 {
+    background-color: #8B008B;  /* Roxo escuro */
+    color: white;               /* Letra branca */
+    font-size: 45px;            /* Tamanho grande */
+    padding: 20px;              /* Espaço interno */
+    border-radius: 15px;        /* Cantos arredondados */
+    text-align: center;         /* Centralizado */
+    margin: 30px 0;             /* Espaço em cima e embaixo */
 }
