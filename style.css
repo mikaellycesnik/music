@@ -7,13 +7,12 @@ h1{
     font-size: 100px;
 }
 
-/* ESTILO NOVO PARA OS TÍTULOS DOS CANTORES */
 h2 {
-    background-color: #ff65bf;  /* Roxo escuro */
-    color: white;               /* Letra branca */
-    font-size: 45px;            /* Tamanho grande */
-    padding: 20px;              /* Espaço interno */
-    border-radius: 15px;        /* Cantos arredondados */
-    text-align: center;         /* Centralizado */
-    margin: 30px 0;             /* Espaço em cima e embaixo */
+    background-color: #C71585;  /* Rosa escuro lindo! */
+    color: white;
+    font-size: 45px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px 0;
 }
